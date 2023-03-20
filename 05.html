@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callAlart(){
+            alert("알림메세지가 출력되는 내장함수 alert()")
+        }
+    </script>
+</head>
+<body>
+    <form action="result.html" method="post">
+        학교명 : <input type="text" size="15" name="schoolName" value="" placeholder="학교명과 전공"><br>
+        성명 : <input type="text" size="15" name="id" value="Name" placeholder="성명"><br>
+        패스워드 : <input type="password" size="15" name="pwd"><br>
+        <!-- "radio" 중복 사용방법 : 동일한 name 속성 사용 -->
+        성별 : <input type="radio" name="gender" value="female">여성 &nbsp;&nbsp;
+               <input type="radio" name="gender" value="male">남성<br>
+        파일 : <input type="file" name="file1"><br>
+        취미 : <input type="checkbox" name="read" value="read">독서 |
+               <input type="checkbox" name="movie" value="movie">영화 |
+               <input type="checkbox" name="traval" value="traval">여행 <br>
+
+        보이지 않는 Data : <input type="hidden" name="page" value="10">
+        <br>
+        <input type="image" src="https://via.placeholder.com/100x100">
+        <br>
+        <button type="reset">취소</button>
+        <button type="submit">확인</button>
+        <button type="button" onclick="callAlart()">일반(JS 함수 호출 할 때 많이 사용)</button>
+    </form>
+</body>
+</html>
